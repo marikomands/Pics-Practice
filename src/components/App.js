@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import SearchBar from "./SearchBar";
 import axios from "axios";
+import SearchBar from "./SearchBar";
+import ImageList from "./ImageList";
 
 const App = () => {
   const [result, setResult] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
     <div>
       <SearchBar onSubmit={fetchImages} />
       Found: {result.length} images!
+      <ImageList />
     </div>
   );
 };
