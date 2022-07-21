@@ -22,7 +22,7 @@ const App = () => {
     <div>
       <SearchBar onSubmit={fetchImages} />
       Found: {result.length} images!
-      <ImageList />
+      <ImageList images={result} />
     </div>
   );
 };
